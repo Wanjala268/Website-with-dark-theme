@@ -7,12 +7,14 @@
 :root{
     --primary-color: #edf2fc;
     --secondary-color: #000106;
+    --link-hover: #ff4321;
   
 } 
 
 .dark-theme {
   --primary-color: #000106; 
   --secondary-color: #fff;
+  --link-hover: #00ff00;
 }
 
 #icon {
@@ -65,7 +67,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #ff4321;
+    background: var(--link-hover);
     position: absolute;
     left: 0;
     bottom: -3px;
