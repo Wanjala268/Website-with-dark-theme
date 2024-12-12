@@ -8,13 +8,13 @@
     --primary-color: #edf2fc;
     --secondary-color: #000106;
     --link-hover: #ff4321;
-  
 } 
 
 .dark-theme {
   --primary-color: #000106; 
   --secondary-color: #fff;
   --link-hover: #00ff00;
+    --link-color: #ff4500;
 }
 
 #icon {
@@ -63,7 +63,9 @@ nav ul li a{
     padding: 5px 0;
     position: relative;
 }
-
+nav ul li a:hover{
+    color: var(--link-color);
+}
 nav ul li a::after{
     content: "";
     width: 0;
